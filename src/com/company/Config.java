@@ -9,7 +9,7 @@ public class Config {
     static final String appBaseUrl =appOnlyIpUrl+"/backstop";
 
     //mill second 1000 =1 second.
-    public static int timeOutSmall=1000;
-    public static int timeOutMid=60000;
-    public static int timeOutLog=120000;
+    public static int timeOutSmall=1001;
+    public static int timeOutMid=60001;
+    public static int timeOutLog=120001;
 }
