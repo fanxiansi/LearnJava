@@ -1,5 +1,8 @@
 package com.company;
 
+import com.company.Pages.PageAllActivity;
+import com.company.Pages.PageHFlaxMeeting;
+import com.company.Pages.PageMyDraft;
 import junit.framework.Assert;
 import org.openqa.selenium.WebDriver;
 
@@ -18,7 +21,7 @@ public class RunMeetingTest extends RunBase{
 
     public void checkMeetingCreate() throws InterruptedException {
 
-        WebDriver driver = beforeEach("HFlax",_defaultBsgPwd,true,PageHFlaxMeeting.url);
+        WebDriver driver = beforeEach("HFlax",_defaultBsgPwd,true, PageHFlaxMeeting.url);
         PageHFlaxMeeting meeting = new PageHFlaxMeeting(driver);
 
 
@@ -26,7 +29,7 @@ public class RunMeetingTest extends RunBase{
         meeting.createMeeting(title,"","George",true);
 
         String description = "Check it in the HFlax's All Activity page.";
-        Assert.assertTrue("note should be displayed in the HFlax's page",isMeetingDraftExist(driver,description,PageAllActivity.urlFlax,title,false));
+        Assert.assertTrue("note should be displayed in the HFlax's page",isMeetingDraftExist(driver,description, PageAllActivity.urlFlax,title,false));
         afterEach(driver);
     }
 
@@ -44,7 +47,7 @@ public class RunMeetingTest extends RunBase{
 
         //check on the My Draft page
         String description = "1.The new meeting draft should be displayed in bsg6 My Draft page.---"+draftTitle;
-        Assert.assertTrue(isMeetingDraftExist(driver,description,PageMyDraft.url,draftTitle,true));
+        Assert.assertTrue(isMeetingDraftExist(driver,description, PageMyDraft.url,draftTitle,true));
 
         //check ALL Activity board
         description = "2.The new meeting draft should be displayed in bsg6's All Activity page.";

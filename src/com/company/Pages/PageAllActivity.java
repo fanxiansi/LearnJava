@@ -1,5 +1,5 @@
-package com.company;
-import com.company.Config;
+package com.company.Pages;
+import com.company.Pages.Config;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,10 +8,10 @@ import org.openqa.selenium.WebElement;
  */
 public class PageAllActivity {
     //product url for test.
-    static final String url= Config.appBaseUrl+"/fundaccounting/portfolio/PrivateEquityFundProduct.action?displayAllActivity=&fundId=12792";
+    public static final String url= Config.appBaseUrl+"/fundaccounting/portfolio/PrivateEquityFundProduct.action?displayAllActivity=&fundId=12792";
 
     //perosn Hlax Flax url for view
-    static final String urlFlax=Config.appBaseUrl+"/crm/ManageContacts.action?display=&viewType=activities&party_id=789993";
+    public static final String urlFlax=Config.appBaseUrl+"/crm/ManageContacts.action?display=&viewType=activities&party_id=789993";
 
     //note url for edit action
     private String baseEditNoteUrl=Config.appBaseUrl+"/crm/note.do?ACTION=edit&noteId=";

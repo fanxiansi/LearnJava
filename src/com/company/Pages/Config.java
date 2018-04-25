@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Pages;
 
 /**
  * Created by George on 1/15/2018.

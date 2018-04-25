@@ -1,17 +1,13 @@
-package com.company;
+package com.company.Pages;
 
-import com.company.Config;
+import com.company.Pages.Config;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import java.security.Key;
-import java.util.List;
 
 /**
  * Created by George on 7/19/2017.
@@ -19,7 +15,7 @@ import java.util.List;
  */
 public class PagePrivateENote {
 
-    static final String url = Config.appBaseUrl+"/crm/note.do?otherId=12792&otherClassName=PortfolioFundBean&isMultipleNote=undefined&isFromEmail=undefined";
+    public static final String url = Config.appBaseUrl+"/crm/note.do?otherId=12792&otherClassName=PortfolioFundBean&isMultipleNote=undefined&isFromEmail=undefined";
 
     //element region
     private WebDriver driver;

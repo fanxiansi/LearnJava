@@ -1,11 +1,11 @@
 package com.company;
 
+import com.company.Pages.Config;
+import com.company.Pages.PageAllActivity;
+import com.company.Pages.PageMyDraft;
+import com.company.Pages.PagePrivateENote;
 import junit.framework.Assert;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-
-import java.sql.Timestamp;
-import java.util.regex.Matcher;
 
 /**
  * Created by George on 8/11/2017.
@@ -34,14 +34,14 @@ public class RunNoteTest extends RunBase{
 
     //Create a new note ,The process should be Ok.
     public void checkNoteCreate() throws InterruptedException {
-        WebDriver driver = beforeEach("HFlax",_defaultBsgPwd,true,PagePrivateENote.url);
+        WebDriver driver = beforeEach("HFlax",_defaultBsgPwd,true, PagePrivateENote.url);
         PagePrivateENote note = new PagePrivateENote(driver);
 
         String title = "create a note for test"+_ts;
         note.createNote(title,"testing note","George","Flax",true);
 
         String description = "Check it in the HFlax's All Activity page.";
-        Assert.assertTrue("note should be displayed in the HFlax's page",isNoteDraftExist(driver,description,PageAllActivity.url,title,false));
+        Assert.assertTrue("note should be displayed in the HFlax's page",isNoteDraftExist(driver,description, PageAllActivity.url,title,false));
     }
 
     // @Test HFlax create draft and CC to Geroge.
@@ -59,7 +59,7 @@ public class RunNoteTest extends RunBase{
 
         // view Draft in My Draft Page
         String description = "1.The new note draft should be displayed in Private Investment 2010 Fund's My Draft page.---"+draftTitle;
-        Assert.assertTrue(isNoteDraftExist(driver,description,PageMyDraft.url,draftTitle,true));
+        Assert.assertTrue(isNoteDraftExist(driver,description, PageMyDraft.url,draftTitle,true));
 
         // check ALL Activity board
         description = "2.The new note draft should be displayed in PE's All Activity page.";
@@ -103,7 +103,7 @@ public class RunNoteTest extends RunBase{
         String draftTitle ="Note Draft URL injection [id=5]"+_ts;
         notePE.createNoteDraft(draftTitle,"","George","Flax",true);
 
-        Thread.sleep(20*Config.timeOutSmall);
+        Thread.sleep(20* Config.timeOutSmall);
 
         // view note draft in My Draft page
         String description = "1.The new Note Draft should be displayed in bsg6 My Draft page.---"+draftTitle;

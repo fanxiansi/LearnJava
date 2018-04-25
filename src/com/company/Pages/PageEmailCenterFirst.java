@@ -1,10 +1,9 @@
 
-package com.company;
-import com.company.Config;
+package com.company.Pages;
+import com.company.Pages.Config;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
@@ -17,7 +16,7 @@ public class PageEmailCenterFirst {
     private WebDriver _driver;
 
     //email cent first page url
-    static final String url= Config.appBaseUrl+"/crm/MailMerge.do?ACTION=merge";
+    public static final String url= Config.appBaseUrl+"/crm/MailMerge.do?ACTION=merge";
 
     //element region
     @FindBy(id ="RelatedAssetGroups")

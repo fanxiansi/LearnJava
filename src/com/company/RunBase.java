@@ -1,5 +1,8 @@
 package com.company;
 
+import com.company.Pages.Config;
+import com.company.Pages.PageAllActivity;
+import com.company.Pages.PageMyDraft;
 import org.openqa.selenium.WebDriver;
 
 import java.sql.Timestamp;
@@ -43,7 +46,7 @@ public class RunBase {
 
         dr.get(url);
 
-        Thread.sleep(20*Config.timeOutSmall);
+        Thread.sleep(20* Config.timeOutSmall);
 
         PageAllActivity PageAllActivity = new PageAllActivity(dr);
 

@@ -1,5 +1,5 @@
-package com.company;
-import com.company.Config;
+package com.company.Pages;
+import com.company.Pages.Config;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 
@@ -12,7 +12,7 @@ import java.util.List;
 public class PageViewDetailEmail {
     private WebDriver _driver;
 
-    static final String url= Config.appBaseUrl+"/utility/merge/showMergeContacts.jsp";
+    public static final String url= Config.appBaseUrl+"/utility/merge/showMergeContacts.jsp";
 
     public PageViewDetailEmail(WebDriver driver)
     {

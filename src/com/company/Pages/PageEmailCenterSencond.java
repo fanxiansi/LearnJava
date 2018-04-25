@@ -1,9 +1,9 @@
-package com.company;
-import com.company.Config;
+package com.company.Pages;
+import com.company.Pages.Config;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.interactions.Actions;
+
 /**
  * Created by George on 10/19/2017.
  */

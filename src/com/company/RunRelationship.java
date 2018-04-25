@@ -1,10 +1,9 @@
 package com.company;
 
+import com.company.Pages.*;
 import junit.framework.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
-
-import java.sql.Timestamp;
 
 /**
  * Created by George on 9/29/2017.
@@ -63,7 +62,7 @@ AddNewPerson();
     //1.Fund summary book test FB-32709
     private void viewFundSumaryBook() throws InterruptedException{
         //WebDriver driver=_utils.login("bsg6",_defaultBsgPwd,true);
-        WebDriver driver = beforeEach("bsg6",_defaultBsgPwd,true,PageFundSummaryBook.url);
+        WebDriver driver = beforeEach("bsg6",_defaultBsgPwd,true, PageFundSummaryBook.url);
 //        WebDriver driver =beforeEacheTest();
 //        driver.get(PageFundSummaryBook.url);
         PageFundSummaryBook FundSummary = new PageFundSummaryBook(driver);
@@ -91,7 +90,7 @@ AddNewPerson();
     private void viewPersonSumaryBook() throws InterruptedException{
         //WebDriver driver=_utils.login("bsg6",_defaultBsgPwd,true);
 //        WebDriver driver = beforeEacheTest();
-        WebDriver driver = beforeEach("bsg6",_defaultBsgPwd,true,PagePersonSummaryBook.url);
+        WebDriver driver = beforeEach("bsg6",_defaultBsgPwd,true, PagePersonSummaryBook.url);
 //        driver.get(PagePersonSummaryBook.url);
         PagePersonSummaryBook personSummary = new PagePersonSummaryBook(driver);
         Thread.sleep(1000);
@@ -106,7 +105,7 @@ AddNewPerson();
     //3. view Send Email
     private void viewAssetGropEmialList() throws InterruptedException {
 //        WebDriver driver = beforeEacheTest();
-        WebDriver driver = beforeEach("bsg6",_defaultBsgPwd,true,PageEmailCenterFirst.url);
+        WebDriver driver = beforeEach("bsg6",_defaultBsgPwd,true, PageEmailCenterFirst.url);
         driver.get(PageEmailCenterFirst.url);
         PageEmailCenterFirst email = new PageEmailCenterFirst(driver);
         try {
@@ -137,7 +136,7 @@ AddNewPerson();
     private void personEntity() throws InterruptedException {
         //WebDriver driver=_utils.login("bsg6",_defaultBsgPwd,true);
 //        WebDriver driver=beforeEacheTest();
-        WebDriver driver = beforeEach("bsg6",_defaultBsgPwd,true,PageEntityGeorge.url);
+        WebDriver driver = beforeEach("bsg6",_defaultBsgPwd,true, PageEntityGeorge.url);
 //        driver.get(PageEntityGeorge.url);
         PageEntityGeorge George = new PageEntityGeorge(driver);
         Thread.sleep(6000);

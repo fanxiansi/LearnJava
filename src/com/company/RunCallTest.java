@@ -1,4 +1,7 @@
 package com.company;
+import com.company.Pages.PageAllActivity;
+import com.company.Pages.PageHFlaxCall;
+import com.company.Pages.PageMyDraft;
 import junit.framework.Assert;
 import org.openqa.selenium.WebDriver;
 
@@ -17,7 +20,7 @@ public class RunCallTest extends RunBase{
     }
 
     public void checkCallCreate() throws InterruptedException {
-        WebDriver driver = beforeEach("HFlax",_defaultBsgPwd,true,PageHFlaxCall.url);
+        WebDriver driver = beforeEach("HFlax",_defaultBsgPwd,true, PageHFlaxCall.url);
         PageHFlaxCall call = new PageHFlaxCall(driver);
 
 
@@ -25,7 +28,7 @@ public class RunCallTest extends RunBase{
         call.createCall(title,"","George",true);
 
         String description = "Check it in the HFlax's All Activity page.";
-        Assert.assertTrue("call should be displayed in the HFlax's page",isCallDraftExist(driver,description,PageAllActivity.urlFlax,title,false));
+        Assert.assertTrue("call should be displayed in the HFlax's page",isCallDraftExist(driver,description, PageAllActivity.urlFlax,title,false));
     }
 
     //@Test URL injection FB-32320
@@ -43,7 +46,7 @@ public class RunCallTest extends RunBase{
 
         //check on the My Draft page
         String description = "1.The new call draft should be displayed in bsg6 My Draft page.---"+draftTitle;
-        Assert.assertTrue(isCallDraftExist(driver,description,PageMyDraft.url,draftTitle,true));
+        Assert.assertTrue(isCallDraftExist(driver,description, PageMyDraft.url,draftTitle,true));
 
         //check ALL Activity board
         print("2.The new call draft should be displayed in bsg6's All Activity page.");

@@ -1,12 +1,10 @@
-package com.company;
-import com.company.Config;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
+package com.company.Pages;
+import com.company.Pages.Config;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.interactions.Actions;
+
 /**
  * Created by George on 10/19/2017.
  */
@@ -14,7 +12,7 @@ public class PageFundSummaryBook {
 
     private WebDriver _driver;
 
-    static final String url= Config.appBaseUrl+"/crm/bookSelector.jsp?subjectType=fund&subjectId=9872";
+    public static final String url= Config.appBaseUrl+"/crm/bookSelector.jsp?subjectType=fund&subjectId=9872";
 
     //element region
     @FindBy(name ="showProfile")

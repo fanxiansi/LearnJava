@@ -1,7 +1,5 @@
-package com.company;
+package com.company.Pages;
 
-import com.company.Config;
-import com.company.Utils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -40,7 +38,7 @@ public class PageAddPerson {
     private WebElement isEmployeeCheckbox;
     //element region
 
-    static final String url= Config.appBaseUrl+"/crm/ManageContacts.do?ACTION=NEW_PERSON";
+    public static final String url= Config.appBaseUrl+"/crm/ManageContacts.do?ACTION=NEW_PERSON";
 
     //action method
     public PageAddPerson(WebDriver driver)

@@ -1,6 +1,6 @@
-package com.company;
+package com.company.Pages;
 
-import com.company.Config;
+import com.company.Pages.Config;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class PageMyDraft {
 
-    static final String url= Config.appBaseUrl+"/crm/ManageDraft.do?ACTION=display";
+    public static final String url= Config.appBaseUrl+"/crm/ManageDraft.do?ACTION=display";
 
     private WebDriver driver;
 

@@ -1,13 +1,11 @@
 
-package com.company;
-        import com.company.Config;
-        import org.openqa.selenium.Alert;
-        import org.openqa.selenium.By;
+package com.company.Pages;
+        import com.company.Pages.Config;
         import org.openqa.selenium.WebDriver;
         import org.openqa.selenium.WebElement;
         import org.openqa.selenium.support.FindBy;
         import org.openqa.selenium.support.PageFactory;
-        import org.openqa.selenium.interactions.Actions;
+
 /**
  * Created by George on 10/19/2017.
  */
@@ -15,7 +13,7 @@ public class PagePersonSummaryBook {
     private WebDriver _driver;
 
     //element region
-    static final String url= Config.appBaseUrl+"/crm/bookSelector.jsp?subjectType=party&subjectId=789993";
+    public static final String url= Config.appBaseUrl+"/crm/bookSelector.jsp?subjectType=party&subjectId=789993";
 
     @FindBy(name ="showContact")
     private WebElement check_profile;

@@ -1,20 +1,20 @@
-package com.company;
+package com.company.Pages;
 
 /**
  * Created by George on 8/18/2017.
  */
 
+import com.company.Pages.Config;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import java.util.List;
 
 public class PageHFlaxMeeting {
 
-    static final String url = Config.appBaseUrl+"/crm/ManageMeetings.do?ACTION=NEW&fromCalendar=true&partyId=789993&type=Face%20to%20Face&otherEntityType=undefined&startDate=2017-8-18%2010:0&stopDate=2017-8-18%2011:0";
+    public static final String url = Config.appBaseUrl+"/crm/ManageMeetings.do?ACTION=NEW&fromCalendar=true&partyId=789993&type=Face%20to%20Face&otherEntityType=undefined&startDate=2017-8-18%2010:0&stopDate=2017-8-18%2011:0";
 
     private WebDriver driver;
 
