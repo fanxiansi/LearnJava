@@ -16,13 +16,13 @@ public class Main {
 
         RunNoteTest noteTest = new RunNoteTest();
         RunCallTest callTest = new RunCallTest();
-//        RunMeetingTest meetingTest = new RunMeetingTest();
+        RunMeetingTest meetingTest = new RunMeetingTest();
         RunRelationship relationship = new RunRelationship();
 
-//        noteTest.run();
-//        callTest.run();
-//        meetingTest.run();
+        noteTest.run();
+        callTest.run();
+        meetingTest.run();
 
-        relationship.run();
+//        relationship.run();
     }
 }

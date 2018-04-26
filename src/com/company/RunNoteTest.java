@@ -21,14 +21,14 @@ public class RunNoteTest extends RunBase{
         //delete draft on the My Draft page
         deleteDraft();
 
-//        checkNoteDrattUrlinjection();
-//        checkAutoSaveNoteDraft();
-//        checkAutoSaveNoteDraftEmptyTitle();
-//        checkEditNoteDraft();
-//        checkNoteDraftViewBuket();
-//        checkCloseDraftByAccident();
-//        checkCreateLinks();
-//        checkNoteCreate();
+        checkNoteDrattUrlinjection();
+        checkAutoSaveNoteDraft();
+        checkAutoSaveNoteDraftEmptyTitle();
+        checkEditNoteDraft();
+        checkNoteDraftViewBuket();
+        checkCloseDraftByAccident();
+        checkCreateLinks();
+        checkNoteCreate();
 
     }
 

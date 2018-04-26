@@ -39,7 +39,7 @@ public class PageLogin {
     private WebElement logout;
     //element region
 
-    static final String url= Config.appOnlyIpUrl;
+    public static final String url= Config.appOnlyIpUrl;
 
     public PageLogin(WebDriver driver)
     {
