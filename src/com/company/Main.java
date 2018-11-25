@@ -19,7 +19,7 @@ public class Main {
         RunMeetingTest meetingTest = new RunMeetingTest();
         RunRelationship relationship = new RunRelationship();
 
-        noteTest.run();
+//        noteTest.run();
         callTest.run();
         meetingTest.run();
 
