@@ -14,6 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 /**
  * Created by George on 7/18/2017.
  */
+//test modifyed
 public class PageLogin {
     private  WebDriver driver;
 
